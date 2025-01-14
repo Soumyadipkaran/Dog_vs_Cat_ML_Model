@@ -42,6 +42,12 @@ You need to organize your data into directories like so:
         - dogs/
         - cats/
 ```
+#Dog's Images
+![IMG_20250114_150419 png](https://github.com/user-attachments/assets/f7cdf338-a80d-426d-96e3-2291ed1fda11)
+#Cat's Images
+![IMG_20250114_150436 png](https://github.com/user-attachments/assets/43532c34-441f-4108-8fbf-ebfb517e1796)
+
+
 
 - **`train/`**: Contains subdirectories for each class (e.g., `dogs/` and `cats/`), with images of each class for training.
 - **`test/`**: Contains subdirectories for each class (e.g., `dogs/` and `cats/`), with images of each class for testing.
@@ -52,6 +58,10 @@ Update the following paths in the code to match where your images are stored:
 train_dir = "C:\path\to\your\train"
 test_dir = "C:\path\to\your\test"
 ```
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/e8c20dd5-eb21-44d6-af6b-0fceab41ac35" alt="Signup Page" style="width: 72%;" />
+    <img src="https://github.com/user-attachments/assets/90dff0db-5a3c-4197-85d8-401dc2996bf4" alt="Login Page" style="width: 25%;" />
+</div>
 
 Ensure the image dimensions in the code (`IMG_HEIGHT = 150, IMG_WIDTH = 150`) are appropriate for your dataset.
 
@@ -108,7 +118,7 @@ After training, the model is saved to a file using:
 ```python
 model.save("dog_cat_classifier_vgg16.h5")
 ```
-
+![IMG_20250114_150530 png](https://github.com/user-attachments/assets/44974564-4b98-4eea-8494-9b16ff2f3c87)
 This saves the entire model, including the architecture, weights, and optimizer state, to a `.h5` file. You can later load this model using `tf.keras.models.load_model()` for inference or further training.
 
 ## Evaluating the Model
@@ -192,6 +202,7 @@ Before running the test, make sure to install the following libraries:
 ### **1. Import the Model**
 
 Load the pre-trained model from the file `dog_cat_classifier_vgg16.h5`. This file contains the model's architecture and weights, which were previously trained.
+![IMG_20250114_150739 png](https://github.com/user-attachments/assets/84b4fd09-81e2-4446-8069-d4c4099975c2)
 
 ### **2. Image Path**
 
@@ -201,6 +212,7 @@ Specify the path of the image you want to test. Update the file path in the scri
   ```plaintext
   unknown_image_path = r"C:\Users\soumy\Desktop\test_img\cat1.jpeg"
   ```
+  ![IMG_20250114_150929 png](https://github.com/user-attachments/assets/8ca37800-3666-4983-bfac-0340254d3460)
 
 ### **3. Display the Image**
 
@@ -223,13 +235,11 @@ Below are two examples of test cases:
 
 - **Test Case 1: Cat Image**
 
-  Path: `C:\Users\soumy\Desktop\test_img\cat1.jpeg`
+![IMG_20250114_151041 png](https://github.com/user-attachments/assets/a2eb3b0b-af73-4ec4-8801-e98f2f65e15b)
 
 - **Test Case 2: Dog Image**
 
-  Path: `C:\Users\soumy\Desktop\test_img\dog1.jpeg`
+![IMG_20250114_151149 png](https://github.com/user-attachments/assets/41891e16-dd17-4434-938e-b883dc811f71)
 
 ---
-
-This README provides the details for testing the model with any unknown image of dogs or cats, as long as the paths are correctly set.
 
