@@ -1,4 +1,3 @@
-
 # Dog vs. Cat Classifier Using VGG16
 
 This deep learning model achieves #99% accuracy on unseen data for classifying images as either dogs or cats. Built using VGG16 with transfer learning, the model leverages TensorFlow/Keras for training and evaluation.
@@ -46,8 +45,7 @@ You need to organize your data into directories like so:
 ![IMG_20250114_150419 png](https://github.com/user-attachments/assets/f7cdf338-a80d-426d-96e3-2291ed1fda11)
 #Cat's Images
 ![IMG_20250114_150436 png](https://github.com/user-attachments/assets/43532c34-441f-4108-8fbf-ebfb517e1796)
-
-
+## Use 80% of the data for training and 20% for testing, organized into respective directories.
 
 - **`train/`**: Contains subdirectories for each class (e.g., `dogs/` and `cats/`), with images of each class for training.
 - **`test/`**: Contains subdirectories for each class (e.g., `dogs/` and `cats/`), with images of each class for testing.
